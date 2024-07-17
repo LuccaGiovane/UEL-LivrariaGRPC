@@ -1,0 +1,85 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Shopping Cart</title>-->
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Your Shopping Cart</h1>-->
+<!--    {% if cart %}-->
+<!--        <form action="{{ url_for('order') }}" method="post">-->
+<!--            <table>-->
+<!--                <thead>-->
+<!--                    <tr>-->
+<!--                        <th>Title</th>-->
+<!--                        <th>Author</th>-->
+<!--                        <th>Year</th>-->
+<!--                        <th>Quantity</th>-->
+<!--                        <th>Price</th>-->
+<!--                    </tr>-->
+<!--                </thead>-->
+<!--                <tbody>-->
+<!--                    {% for item in cart %}-->
+<!--                        <tr>-->
+<!--                            <td>{{ item.title }}</td>-->
+<!--                            <td>{{ item.author }}</td>-->
+<!--                            <td>{{ item.year }}</td>-->
+<!--                            <td>{{ item.quantity }}</td>-->
+<!--                            <td>{{ item.price }}</td>-->
+<!--                        </tr>-->
+<!--                    {% endfor %}-->
+<!--                </tbody>-->
+<!--            </table>-->
+<!--            <button type="submit">Place Order</button>-->
+<!--        </form>-->
+<!--    {% else %}-->
+<!--        <p>Your cart is empty.</p>-->
+<!--    {% endif %}-->
+<!--    <a href="{{ url_for('books') }}">Continue Shopping</a>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    {% include 'base.html' %}
+    {% block content %}
+    <h1>Your Shopping Cart</h1>
+    {% if cart %}
+        <form action="{{ url_for('order') }}" method="post">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Year</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for item in cart %}
+                        <tr>
+                            <td>{{ item.title }}</td>
+                            <td>{{ item.author }}</td>
+                            <td>{{ item.year }}</td>
+                            <td>{{ item.quantity }}</td>
+                            <td>{{ item.price }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <button type="submit">Place Order</button>
+        </form>
+    {% else %}
+        <p>Your cart is empty.</p>
+    {% endif %}
+    <a href="{{ url_for('books') }}">Continue Shopping</a>
+    {% endblock %}
+</body>
+</html>
