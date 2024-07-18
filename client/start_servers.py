@@ -2,6 +2,8 @@ import subprocess
 import os
 
 def start_server(script_name):
+    """Inicia um servidor executando um script Python especificado."""
+
     return subprocess.Popen(['python', script_name], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 if __name__ == "__main__":

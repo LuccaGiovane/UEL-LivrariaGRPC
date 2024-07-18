@@ -22,11 +22,15 @@ orders_client = OrdersServiceClient('localhost:50053')
 
 @app.route('/')
 def index():
+    """Renderiza a página inicial e verifica se o usuário está logado."""
+
     logged_in = 'username' in session
     return render_template('index.html', logged_in=logged_in)
 
 @app.route('/books')
 def books():
+    """Exibe a lista de livros disponíveis, obtendo-os do serviço de catálogo."""
+
     response = catalog_client.list_books()
     books = [{"id": book.id, "title": book.title, "author": book.author, "year": book.year, "quantity": book.quantity, "price": book.price} for book in response.books]
     logged_in = 'username' in session
@@ -34,6 +38,8 @@ def books():
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
+    """Permite que um novo usuário se registre. Se o método for POST, tenta registrar o usuário com as credenciais fornecidas."""
+
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -56,6 +62,7 @@ def register():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    """Permite que um usuário existente faça login. Se o método for POST, tenta autenticar o usuário com as credenciais fornecidas."""
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
@@ -79,12 +86,16 @@ def login():
 
 @app.route('/logout')
 def logout():
+    """Faz logout do usuário atual e redireciona para a página inicial."""
+
     session.pop('username', None)
     flash('You have been logged out.')
     return redirect(url_for('index'))
 
 @app.route('/add_to_cart', methods=['POST'])
 def add_to_cart():
+    """Adiciona um livro ao carrinho de compras do usuário. Requer que o usuário esteja logado."""
+
     if 'username' not in session:
         flash('You must be logged in to add items to the cart.')
         return redirect(url_for('login'))
@@ -105,6 +116,8 @@ def add_to_cart():
     return redirect(url_for('books'))
 
 def get_book_by_id(book_id):
+    """Obtém um livro pelo seu ID usando o serviço de catálogo."""
+
     response = catalog_client.list_books()
     for book in response.books:
         if book.id == book_id:
@@ -120,6 +133,8 @@ def get_book_by_id(book_id):
 
 @app.route('/cart', methods=['GET', 'POST'])
 def cart():
+    """Exibe o carrinho de compras do usuário, permitindo que ele veja e ajuste as quantidades dos itens."""
+
     if 'username' not in session:
         flash('You must be logged in to view your cart.')
         return redirect(url_for('login'))
@@ -135,6 +150,8 @@ def cart():
 
 @app.route('/remove_from_cart', methods=['POST'])
 def remove_from_cart():
+    """Remove um item do carrinho de compras do usuário."""
+
     book_id = int(request.form['book_id'])
 
     cart = session.get('cart', [])
@@ -145,6 +162,8 @@ def remove_from_cart():
 
 @app.route('/update_cart/<int:book_id>', methods=['POST'])
 def update_cart(book_id):
+    """Atualiza a quantidade de um item no carrinho de compras do usuário."""
+
     new_quantity = int(request.form['quantity'])
     cart = session.get('cart', [])
     for item in cart:
@@ -163,6 +182,8 @@ def update_cart(book_id):
 
 @app.route('/order', methods=['GET', 'POST'])
 def order():
+    """Permite que um usuário faça um pedido com os itens do seu carrinho de compras. Requer que o usuário esteja logado."""
+
     if 'username' not in session:
         flash('You must be logged in to place an order.')
         logging.debug('User not logged in. Redirecting to login.')
@@ -204,6 +225,8 @@ def order():
 
 @app.route('/orders')
 def orders():
+    """Exibe o histórico de pedidos do usuário logado."""
+
     if 'username' not in session:
         flash('You must be logged in to view your orders.')
         return redirect(url_for('login'))
@@ -222,6 +245,8 @@ def orders():
 
 @app.route('/order_details/<order_id>')
 def order_details(order_id):
+    """Exibe os detalhes de um pedido específico. Requer que o usuário esteja logado."""
+
     if 'username' not in session:
         flash('You must be logged in to view order details.')
         return redirect(url_for('login'))
@@ -246,6 +271,8 @@ def order_details(order_id):
 
 @app.route('/users')
 def users():
+    """Exibe uma lista de todos os usuários registrados."""
+
     try:
         response = auth_client.get_users()
         users = [{"username": user.username} for user in response.users]
