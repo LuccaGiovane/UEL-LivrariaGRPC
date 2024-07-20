@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eb420594-7af2-421a-8bdf-4a7f9b665acd" name="Changes" comment="Novos comentarios escritos em pontos chaves de metodos explicando seus funcionamentos">
+      <change beforePath="$PROJECT_DIR$/start_all.py" beforeDir="false" afterPath="$PROJECT_DIR$/start_all.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;LuccaGiovane&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/LuccaGiovane/UEL-SistemasDistribuidos.git&quot;,
+    &quot;accountId&quot;: &quot;15fca5c8-86eb-4b89-8b27-4bcf9ebd6597&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2j1vneqc0XdGYSdmQG9bSwtg2pQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python.web_client.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lucca\Desktop\Sistemas Distribuidos\bookstore\rpcBookstore" />
+      <recent name="C:\Users\lucca\Desktop\Sistemas Distribuidos\bookstore\client" />
+      <recent name="C:\Users\lucca\Desktop\Sistemas Distribuidos\bookstore\server" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb420594-7af2-421a-8bdf-4a7f9b665acd" name="Changes" comment="" />
+      <created>1720567567374</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1720567567374</updated>
+      <workItem from="1720567569826" duration="3862000" />
+      <workItem from="1720571789679" duration="634000" />
+      <workItem from="1720572912318" duration="6676000" />
+      <workItem from="1720646375574" duration="5443000" />
+      <workItem from="1720698013033" duration="3617000" />
+      <workItem from="1720738175958" duration="3144000" />
+      <workItem from="1720751243503" duration="36000" />
+      <workItem from="1720783202286" duration="213000" />
+      <workItem from="1720792444185" duration="4079000" />
+      <workItem from="1720810097038" duration="4609000" />
+      <workItem from="1720872644801" duration="1708000" />
+      <workItem from="1720874467068" duration="1106000" />
+      <workItem from="1720875631670" duration="2967000" />
+      <workItem from="1720897653798" duration="3482000" />
+      <workItem from="1720976477300" duration="4285000" />
+      <workItem from="1720996838669" duration="2164000" />
+      <workItem from="1721041869472" duration="88000" />
+      <workItem from="1721042929923" duration="3315000" />
+      <workItem from="1721049392741" duration="202000" />
+      <workItem from="1721051148542" duration="849000" />
+      <workItem from="1721052023355" duration="40000" />
+      <workItem from="1721084462678" duration="4806000" />
+      <workItem from="1721128634222" duration="459000" />
+      <workItem from="1721129633318" duration="2023000" />
+      <workItem from="1721135839401" duration="525000" />
+      <workItem from="1721149075278" duration="571000" />
+      <workItem from="1721150163114" duration="5012000" />
+      <workItem from="1721182071522" duration="1839000" />
+      <workItem from="1721225517555" duration="544000" />
+      <workItem from="1721262240831" duration="1019000" />
+      <workItem from="1721263795479" duration="4106000" />
+      <workItem from="1721316696314" duration="167000" />
+      <workItem from="1721319546895" duration="765000" />
+      <workItem from="1721321803576" duration="84000" />
+      <workItem from="1721328450259" duration="126000" />
+      <workItem from="1721344236359" duration="191000" />
+    </task>
+    <task id="LOCAL-00001" summary="arquivo start_all adicionado iniciando os servidores auth, catalog, server e o web_client.&#10;makefile alterado para rodar o arquivo start_all iniciando o projeto e abrindo na web">
+      <option name="closed" value="true" />
+      <created>1721263260180</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721263260180</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Novos comentarios escritos em pontos chaves de metodos explicando seus funcionamentos">
+      <option name="closed" value="true" />
+      <created>1721267950509</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721267950509</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="arquivo start_all adicionado iniciando os servidores auth, catalog, server e o web_client.&#10;makefile alterado para rodar o arquivo start_all iniciando o projeto e abrindo na web" />
+    <MESSAGE value="Novos comentarios escritos em pontos chaves de metodos explicando seus funcionamentos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Novos comentarios escritos em pontos chaves de metodos explicando seus funcionamentos" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bookstore$web_client.coverage" NAME="web_client Coverage Results" MODIFIED="1720812785973" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/client" />
+  </component>
+</project>

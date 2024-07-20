@@ -1,0 +1,49 @@
+syntax = "proto3";
+
+package orders;
+
+service OrdersService {
+    rpc CreateOrder (CreateOrderRequest) returns (CreateOrderResponse);
+    rpc GetOrderHistory (GetOrderHistoryRequest) returns (GetOrderHistoryResponse);
+    rpc GetOrderDetails (GetOrderDetailsRequest) returns (GetOrderDetailsResponse);
+}
+
+message Book {
+    string title = 1;
+    int32 quantity = 2;
+}
+
+message CreateOrderRequest {
+    string username = 1;
+    repeated Book books = 2;
+}
+
+message CreateOrderResponse {
+    string order_id = 1;
+}
+
+message GetOrderHistoryRequest {
+    string username = 1;
+}
+
+message GetOrderHistoryResponse {
+    repeated Order orders = 1;
+}
+
+message GetOrderDetailsRequest {
+    string order_id = 1;
+}
+
+message GetOrderDetailsResponse {
+    string order_id = 1;
+    string username = 2;
+    repeated Book books = 3;
+    string date = 4;
+}
+
+message Order {
+    string order_id = 1;
+    string username = 2;
+    repeated Book books = 3;
+    string date = 4;
+}
